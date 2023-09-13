@@ -1,193 +1,266 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Quicksand:wght@500;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&family=Quicksand:wght@500;700&display=swap");
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar {
+  height: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-header {
-    background-color: #EAD2AC;
-    width: auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0px 20px;
-    height: 60px;
-    letter-spacing: 3px;
-}
-
-header h1 {
-    font-size: x-large;
-    margin-left: 20px;
-}
-
-nav ul {
-    display: flex;
-    list-style-type: none;
-}
-
-nav a {
-    font-size: 14px;
-    margin: 15px;
-    text-decoration: none;
-    color: black;
-}
-
-nav a:hover {
-    background-color: rgb(38, 18, 0);
-    padding: 5px 20px;
-    color: beige;
-    border-radius: 50px;
+li {
+  list-style: none;
 }
 
 body {
-    font-family: 'Poppins', 'Quicksand', 'sans-serif';
-    color: rgb(38, 18, 0);
-    margin: 0;
-    padding: 0;
+  font-family: "Poppins", "Quicksand", "sans-serif";
+  color: rgb(38, 18, 0);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #ead2ac;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 20px;
+  height: 60px;
+  letter-spacing: 3px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+
+main {
+  top: 0;
+}
+
+.my__profile {
+  display: none;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+nav ul li {
+  margin-right: 10px;
+}
+
+nav a {
+  font-size: 14px;
+  text-decoration: none;
+  color: black;
+}
+
+nav a:hover {
+  background-color: rgb(38, 18, 0);
+  padding: 5px 20px;
+  color: beige;
+  border-radius: 50px;
 }
 
 .aboutMe {
-    width: 95%;
-    margin: 100px auto;
-    padding: 2% 0 5% 0;
-    border: 1px solid rgb(202, 169, 139);
-    background-color: #EAD2AC;
+  width: 95%;
+  margin: 100px auto;
+  padding: 2% 0 5% 0;
+  border: 1px solid rgb(202, 169, 139);
+  background-color: #ead2ac;
 }
 
 .aboutMe h2 {
-    text-align: center;
-    letter-spacing: 3px;
+  text-align: center;
+  letter-spacing: 3px;
 }
 
 .aboutMe p {
-    max-width: 65%;
-    font-size: medium;
-    text-align: justify;
-    margin: 0 auto;
+  max-width: 65%;
+  font-size: medium;
+  text-align: justify;
+  margin: 0 auto;
 }
 
 .allCard {
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    justify-content: center;
-    width: 95%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  width: 95%;
 }
 
 .card {
-    margin: 0 auto;
-    padding: 0 auto;
-    font-size: medium;
-    border-radius: 5px;
-    box-shadow: 0px 10px 4px 0px #D3CDCD;
-    background-color: #F0D1A2;
-    border: 1px solid rgb(202, 169, 139);
-    height: auto;
-    width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: medium;
+  border-radius: 5px;
+  box-shadow: 0px 10px 4px 0px #d3cdcd;
+  background-color: #f0d1a2;
+  border: 1px solid rgb(202, 169, 139);
+  height: auto;
+  width: 350px;
 }
 
 .card h3 {
-    font-size: medium;
-    text-align: center;
+  font-size: medium;
+  text-align: center;
 }
 
 .card li {
-    text-align: left;
-    box-sizing: border-box;
+  text-align: left;
+  box-sizing: border-box;
 }
 
 .album {
-    border-radius: 5px;
-    box-shadow: 0px 10px 4px 0px #D3CDCD;
-    background-color: #F0D1A2;
-    margin: 100px auto;
-    text-align: center;
-    border: 1px solid rgb(202, 169, 139);
-    max-width: 95%;
+  border-radius: 5px;
+  box-shadow: 0px 10px 4px 0px #d3cdcd;
+  background-color: #f0d1a2;
+  margin: 100px auto;
+  text-align: center;
+  border: 1px solid rgb(202, 169, 139);
+  max-width: 95%;
 }
 
 .album h2 {
-    padding: 10px;
-    letter-spacing: 3px;
+  padding: 10px;
+  letter-spacing: 3px;
 }
 
 .picture img {
-    height: 250px;
-    margin: 0 5% 7%;
-    box-shadow: 8px 10px 4px 0px #696565;
-    background-color: beige;
+  height: 250px;
+  margin: 0 5% 7%;
+  box-shadow: 8px 10px 4px 0px #696565;
+  background-color: beige;
 }
 
 .picture img:hover {
-    height: 350px;
-    margin: 0 5% 7%;
-    box-shadow: 8px 10px 4px 0px #696565;
+  height: 350px;
+  margin: 0 5% 7%;
+  box-shadow: 8px 10px 4px 0px #696565;
 }
 
 .contactimage {
-    position: relative;
-    text-align: center;
+  position: relative;
+  text-align: center;
 }
 
-.contactimage img{
-    max-width: 100%;
+.contactimage img {
+  max-width: 100%;
 }
 
 .cp {
-    position: absolute;
-    background-color: white;
-    width: 35%;
-    top: 20%;
-    bottom: 40%;
-    left: 12%;
-    padding: 4%;
-    overflow-wrap: break-word;
-    max-height: fit-content;
+  position: absolute;
+  background-color: white;
+  width: 35%;
+  top: 20%;
+  bottom: 40%;
+  left: 12%;
+  padding: 4%;
+  overflow-wrap: break-word;
+  max-height: fit-content;
 }
 
 .cp h3 {
-    letter-spacing: 3px;
+  font-size: 16px;
 }
 
 .cp p {
-    font-size: large;
+  font-size: 10px;
 }
 
-.cp p a{
-    margin: 0;
-    text-decoration: none;
-    color: rgb(38, 18, 0);
+.cp p a {
+  margin: 0;
+  text-decoration: none;
+  color: rgb(38, 18, 0);
 }
 
 .myprofile {
-    background-color: #EAD2AC;
-    border-radius: 10px;
-    margin: 50px auto;
-    max-width: 50%;
-    max-height: max-content;
-    text-align: center;
-    padding: 4% 0;
+  background-color: #ead2ac;
+  border-radius: 10px;
+  margin: 80px auto;
+  max-width: 50%;
+  max-height: max-content;
+  text-align: center;
+  padding: 4% 0;
 }
 
 figure {
-    margin: 0 auto;
+  margin: 0 auto;
 }
 
 figure img {
-    max-width: 50%;
+  max-width: 50%;
 }
 
 .myprofile p {
-    margin: 5% 0 0;
-    font-size: larger;
+  margin: 5% 0 0;
+  font-size: larger;
 }
 
 footer {
-    color: rgb(38, 18, 0);
-    background-color: #EAD2AC;
-    text-align: center;
-    font-size: large;
-    margin-top: 50px;
-    line-height: 50px;
+  color: rgb(38, 18, 0);
+  background-color: #ead2ac;
+  text-align: center;
+  font-size: 10px;
+  margin-top: 50px;
+  line-height: 50px;
 }
 
+@media screen and (min-width: 768px) {
+  .my__profile {
+    display: block;
+  }
+  header {
+    justify-content: space-between;
+  }
+  .allCard {
+    flex-direction: row;
+  }
+
+  .cp h3 {
+    font-size: 26px;
+  }
+
+  .cp p {
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cp h3 {
+    font-size: 32px;
+  }
+
+  .cp p {
+    font-size: 24px;
+  }
+
+  footer {
+    font-size: 16px;
+  }
+}
