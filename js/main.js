@@ -1,4 +1,3 @@
-// Data yang telah Anda buat
 const data = [
   {
     sectionName: "EDUCATION",
@@ -21,13 +20,12 @@ const data = [
   },
 ];
 
-// Function untuk merender data ke dalam HTML dengan menambahkan kelas CSS
 function renderData() {
   const dataContainer = document.getElementById("allCard");
 
   data.forEach((section) => {
     const sectionDiv = document.createElement("div");
-    sectionDiv.classList.add("section", "card"); // Tambahkan kelas 'section' dan 'card'
+    sectionDiv.classList.add("section", "card");
 
     const sectionHeader = document.createElement("h3");
     sectionHeader.textContent = section.sectionName;
@@ -46,5 +44,4 @@ function renderData() {
   });
 }
 
-// Panggil fungsi renderData untuk merender data ke dalam HTML
 renderData();
